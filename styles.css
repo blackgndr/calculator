@@ -1,0 +1,86 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+#calculator {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    background-color: #65a2e7;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+#display {
+    background-color: #222;
+    color: #fff;
+    text-align: right;
+    padding: 20px;
+    font-size: 1.5em;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    height: 60px;
+}
+
+#numbers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#numbers button {
+    background-color: #f9f9f9;
+}
+
+#operations button {
+    background-color: #b84851;
+}
+
+#other button {
+    background-color: #468fca;
+}
+
+#numbers #backspace {
+    background-color: #a5b92e;
+}
+
+#numbers button:hover, #operations button:hover, #other button:hover {
+    background-color: #e0e0e0;
+}
+
+#operations {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#other {
+    display: flex;
+    justify-content: space-between;
+}
+
+#other button {
+    flex: 1;
+    margin: 0 5px;
+}
